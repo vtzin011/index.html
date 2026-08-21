@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descomplicando a Estatística: Média, Mediana e Moda</title>
+    <link rel="stylesheet" href="pg2.css">
+</head>
+<body>
+
+    <!-- Esferas de luz suave e clara ao fundo -->
+    <div class="glow-blue"></div>
+    <div class="glow-lavender"></div>
+
+    <div class="presentation-wrapper">
+        
+        <!-- SLIDE 1: CAPA -->
+        <div class="slide active" id="slide-1">
+            <span class="slide-indicator">01 // 08</span>
+            <div class="slide-body centerpiece">
+                <div class="welcome-badge">Análise de Dados no Dia a Dia</div>
+                <h1 class="gradient-title">Média, Mediana<br>e Moda</h1>
+                <p class="main-subtitle">Como resumir montanhas de números e entender o que eles realmente significam</p>
+                <div class="branding-bar">
+                    <span>Leitura de Padrões</span>
+                    <span class="bullet">•</span>
+                    <span>Aplicações Práticas</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- SLIDE 2: POR QUE ISSO IMPORTA? -->
+        <div class="slide" id="slide-2">
+            <span class="slide-indicator">02 // 08</span>
+            <div class="slide-body">
+                <h2>Por que precisamos dessas métricas?</h2>
+                <p class="section-lead">Olhar para uma planilha com milhares de linhas não te diz nada à primeira vista. Precisamos de resumos inteligentes.</p>
+                
+                <div class="grid-2">
+                    <div class="glass-card">
+                        <h3>O Caos dos Dados Brutos</h3>
+                        <p>Imagine que você tem o tempo de acesso de 10.000 usuários em um site. É impossível tomar uma decisão lendo número por número. Nós precisamos de um único valor que represente o grupo todo.</p>
+                    </div>
+                    <div class="glass-card premium-border">
+                        <h3>A Solução: Tendência Central</h3>
+                        <p>É aí que entram a Média, a Mediana e a Moda. Elas funcionam como "ímãs" que nos mostram para onde a maioria dos dados está apontando ou se concentrando, facilitando a nossa tomada de decisão.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SLIDE 3: A MÉDIA -->
+        <div class="slide" id="slide-3">
+            <span class="slide-indicator">03 // 08</span>
+            <div class="slide-body">
+                <h2>1. Média: O Equilíbrio Perfeito</h2>
+                <p class="section-lead">É a métrica mais famosa do mundo, usada para dividir o total em partes iguais.</p>
+                
+                <div class="showcase-box">
+                    <div class="concept-split">
+                        <div class="concept-desc">
+                            <p><strong>Como funciona:</strong> Você junta tudo o que tem e divide de forma igualitária pela quantidade de participantes. É o que fazemos para calcular a média de gols de um atacante ou a média de gastos mensais.</p>
+                            <p class="margin-top-15"><strong>O ponto fraco:</strong> Ela é muito inocente. Se uma pessoa no grupo for extremamente rica ou gastar demais, a média vai subir tanto que vai mascarar a realidade de todos os outros.</p>
+                        </div>
+                        <div class="formula-card">
+                            <div class="formula-title">A Regra Prática</div>
+                            <div class="formula-box">Média = Soma / Quantidade</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SLIDE 4: A MEDIANA -->
+        <div class="slide" id="slide-4">
+            <span class="slide-indicator">04 // 08</span>
+            <div class="slide-body">
+                <h2>2. Mediana: Quem está no meio?</h2>
+                <p class="section-lead">A Mediana é o termômetro da justiça posicional. Ela divide o grupo exatamente ao meio.</p>
+                <div class="grid-3">
+                    <div class="glass-card">
+                        <h3>O Conceito</h3>
+                        <p>Se você colocar todo mundo em uma fila ordenada, a Mediana é o valor da pessoa que está bem no centro. 50% da fila é menor que ela e 50% é maior.</p>
+                    </div>
+                    <div class="glass-card premium-border">
+                        <h3>Se a fila for Ímpar</h3>
+                        <p>É muito fácil: existe apenas uma pessoa no meio exato. Esse valor central já é a sua Mediana de forma direta e sem mistérios.</p>
+                    </div>
+                    <div class="glass-card">
+                        <h3>Se a fila for Par</h3>
+                        <p>Não sobra ninguém sozinho no meio. Então, nós pegamos os dois vizinhos mais centrais, somamos os dois e dividimos por dois para achar a Mediana.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SLIDE 5: A REGRA DO ROL -->
+        <div class="slide" id="slide-5">
+            <span class="slide-indicator">05 // 08</span>
+            <div class="slide-body">
+                <h2>O Segredo da Mediana: O Rol</h2>
+                <p class="section-lead">Aqui é onde a maioria das pessoas erra. A Mediana exige organização extrema.</p>
+                
+                <div class="showcase-box">
+                    <div class="code-flow">
+                        <div class="flow-step">
+                            <span class="step-num">1</span>
+                            <span class="step-txt">Bagunça Total:</span>
+                        </div>
+                        <div class="flow-arrow">➔</div>
+                        <div class="flow-step active-step">
+                            <span class="step-num">2</span>
+                            <span class="step-txt">Criando o Rol:</span>
+                        </div>
+                        <div class="flow-arrow">➔</div>
+                        <div class="flow-step">
+                            <span class="step-num">3</span>
+                            <span class="step-txt">Achar o Centro: (2+5)/2 = 3.5</span>
+                        </div>
+                    </div>
+                    <p class="insight-text">
+                        Chamar um conjunto de dados ordenado de <strong>Rol</strong> parece complicado, mas significa apenas colocar os números na ordem crescente (do menor para o maior). Se você tentar calcular a Mediana com os números bagunçados, vai pegar um valor aleatório e errar o resultado.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- SLIDE 6: A MODA -->
+        <div class="slide" id="slide-6">
+            <span class="slide-indicator">06 // 08</span>
+            <div class="slide-body">
+                <h2>3. Moda: O que mais se repete?</h2>
+                <p class="section-lead">A Moda segue a mesma lógica das roupas nas lojas: é aquilo que todo mundo está usando ou fazendo.</p>
+                
+                <div class="grid-3">
+                    <div class="glass-card">
+                        <h3>Unimodal</h3>
+                        <p>É o caso mais comum. Existe apenas um único número que aparece mais vezes do que todos os outros na sua lista.</p>
+                    </div>
+                    <div class="glass-card premium-border">
+                        <h3>Multimodal</h3>
+                        <p>Acontece quando há um empate na liderança! Dois ou mais números diferentes se repetem com a mesma frequência máxima.</p>
+                    </div>
+                    <div class="glass-card">
+                        <h3>Amodal</h3>
+                        <p>Se a sua lista for cheia de números únicos e ninguém se repetir nenhuma vez, o conjunto não tem moda. Ele é amodal.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SLIDE 7: EXEMPLO REAL DOS OUTLIERS -->
+        <div class="slide" id="slide-7">
+            <span class="slide-indicator">07 // 08</span>
+            <div class="slide-body">
+                <h2>Média vs Mediana na Prática</h2>
+                <p class="section-lead">Vamos ver como um único número absurdo (Outlier) pode estragar a Média, enquanto a Mediana continua firme.</p>
+                
+                <div class="grid-2">
+                    <div class="glass-card">
+                        <span class="badge">Salários Normais</span>
+                        <div class="dataset-display">Firma A: [R$ 3.000, R$ 4.000, R$ 4.000, R$ 5.000]</div>
+                        <div class="metric-row"><span>Média da Empresa:</span> <strong class="purple-light">R$ 4.000</strong></div>
+                        <div class="metric-row"><span>Mediana da Empresa:</span> <strong class="purple-light">R$ 4.000</strong></div>
+                    </div>
+                    
+                    <div class="glass-card premium-border">
+                        <span class="badge alert">Dono Entrou no Gráfico</span>
+                        <div class="dataset-display">Firma B: [R$ 3.000, R$ 4.000, R$ 4.000, R$ 5.000, R$ 84.000]</div>
+                        <div class="metric-row"><span>Média da Empresa:</span> <strong class="txt-neon">R$ 20.000</strong></div>
+                        <div class="metric-row"><span>Mediana da Empresa:</span> <strong class="purple-light">R$ 4.000</strong></div>
+                    </div>
+                </div>
+                <div class="tech-note">
+                    <strong>Moral da História:</strong> Dizer que a média salarial da Firma B é R$ 20.000 é mentira para 90% dos funcionários. A Mediana salvou o dia mantendo-se em R$ 4.000, provando que é muito mais confiável quando temos extremos.
+                </div>
+            </div>
+        </div>
+
+        <!-- SLIDE 8: DESAFIO INTERATIVO -->
+        <div class="slide" id="slide-8">
+            <span class="slide-indicator">08 // 08</span>
+            <div class="slide-body">
+                <h2>Hora do Teste Real</h2>
+                <p class="section-lead">Vamos rodar um teste prático. Mude os números abaixo para ver o algoritmo recalcular tudo na hora.</p>
+                
+                <div class="grid-2">
+                    <div class="glass-card inner-padded">
+                        <h3>Dados para o Desafio</h3>
+                        <p class="margin-bottom-15">Imagine estes tempos de uso de um aplicativo em minutos coletados hoje:</p>
+                        <div class="raw-data">20, 12, 45, 15, 12, 36</div>
+                        <p class="small-text-card">Organizando em ordem (Rol), o centro par fica entre 15 e 20. A média dá 23.33 e o 12 repete mais.</p>
+                    </div>
+
+                    <div class="glass-card premium-border inner-padded">
+                        <h3>Simulador em Tempo Real</h3>
+                        <div class="interactive-form">
+                            <input type="text" id="numbersInput" value="20, 12, 45, 15, 12, 36">
+                            <button id="btnCalcular">Processar Dados Agora</button>
+                        </div>
+                        
+                        <div class="realtime-results">
+                            <div class="res-item"><span>Fila Organizada (Rol):</span> <strong id="resRol">-</strong></div>
+                            <div class="res-item"><span>Resultado da Média:</span> <strong id="resMedia" class="txt-neon">-</strong></div>
+                            <div class="res-item"><span>Resultado da Mediana:</span> <strong id="resMediana" class="txt-neon">-</strong></div>
+                            <div class="res-item"><span>Vencedor da Moda:</span> <strong id="resModa" class="txt-neon">-</strong></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- BARRAS DE NAVEGAÇÃO -->
+        <div class="nav-bar">
+            <button id="btnPrev" class="nav-btn">← Voltar</button>
+            <div class="progress-container">
+                <div class="progress-bar" id="progressBar"></div>
+            </div>
+            <button id="btnNext" class="nav-btn nav-btn-primary">Avançar →</button>
+        </div>
+
+    </div>
+
+    <script src="pg3.js"></script>
+</body>
+</html>
+
+
+
